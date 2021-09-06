@@ -1,4 +1,8 @@
-var nums=[3,4,5]
-var nums2=[...nums]
-
-console.log(nums)
+b=5
+function Test(){
+    a=10;
+    console.log(b)
+   
+}
+Test()
+console.log(b)

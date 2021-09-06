@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Total Tax</title>
+
+</head>
+<body>
+    
+        <!-- (A) HTML FORM -->
+<form onsubmit="return tcalc();">
+    <!-- (A1) ITEM PRICE -->
+    Price
+    <input type="number" min="0" max="9999" step="0.01"
+           id="taxprice" required value="12.34"/>
+    <br>
+    <!-- Quantity -->
+    Quantity
+    <input type="number" min="1" max="9999" 
+           id="quantity" />
+    <br>
+   
+    <!-- (A2) TAX PERCENTAGE -->
+    Tax Percentage 
+    <input type="number" min="1" max="100" step="1"
+           id="taxperc" required value="9"/>
+    <br>
+   
+    <!-- (A3) TAXABLE AMOUNT -->
+    Tax Amount 
+    <input type="text" readonly id="taxamt"/>
+    <br>
+   
+  
+    <!-- (A4) TOTAL WITH TAX -->
+    Total price
+    <input type="text" readonly id="taxgrand"/>
+    <br>
+   
+    <!-- (A5) GO! -->
+    <input type="submit" value="Go!"/>
+  </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
